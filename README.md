@@ -100,9 +100,12 @@ The```.h5``` file contains the following data:
 |  *jelly*     | *W*      | Linear basis (BGBC)                | [num_jelly_nodes, num_handle_rows]  |
 |              | *q_ref*  | Reference transformations          | [num_handle_rows, dim]              |
 |              | *tris*   | Triangle indices                   | [num_jelly_tris, dim+1]             |
+|              | *uv_coords* | uv texture coordinates          | [num_jelly_nodes, dim]              |
+|              | *uv_indices*  | uv indices per triangle       | [num_jelly_tris, dim+1]             |
 |  *star*      | *W*      | Linear basis (rigid)               | [num_star_nodes, dim+1]             |
 |              | *z_ref*  | Reference transformation           | [dim+1, dim]                        |
 |              | *tris*   | Triangle indices                   | [num_star_tris, dim+1]              |
+
 
 Using this information, the results of the model can be easily visualized with the plotting package ```matplotlib```:
 
